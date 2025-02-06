@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('./assests/Poppins/Poppins-Regular.ttf') format("truetype");
+}
+
+* {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.board {
+    background-color: #eee;
+    width: 75%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.entry {
+    width: 100%;
+}
+
+.status {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto, auto;
+    /* grid-auto-flow: dense; */
+}
+
+#time {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#words {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#speed {
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+#accuracy {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+.input {
+    background-color: #eee;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.win-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}   
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eee;
+    width: 40%;
+    height: 20%;
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.message-text {
+    font-size: 20px;
+}
+
+.message button {
+    margin-top: 20px;
+    border: none;
+    background-color: #0080008f;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000003f;
+}
+
+
+
